@@ -1,10 +1,8 @@
 
 import javax.swing.ImageIcon;
 
- class Algae extends Motionless{
+public class Algae extends Motionless{
     private ImageIcon img;
-    
-    
     
     public Algae()
     {

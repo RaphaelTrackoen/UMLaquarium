@@ -2,24 +2,22 @@
 import javax.swing.ImageIcon;
 
 
-public class Shark extends Motion{
+public class Jellyfish extends Motion{
     private int food_level;
     private int satiety;
     private int life;
-    private final int birthDelay = 5;
+    private final int birthDelay = 0;
     private ImageIcon img;
-    private int direction;
     
-    public Shark()
+    public Jellyfish()
     {
-        super("Shark");
+        super("Jellyfish");
         this.food_level = 10;
         this.satiety = 15;
         this.life = 0;
-        img = new ImageIcon("requinRL.png");
-        direction = 1;
+        img = new ImageIcon("meduse.png");
     }
-
+    
     public String getSpecie() {
             return super.getName();
     }
@@ -59,28 +57,5 @@ public class Shark extends Motion{
     public ImageIcon getImg()
     {
         return img;
-    }
-    
-    public void setImg(String url)
-    {
-        img = new ImageIcon(url);
-    }
-    
-    public void setDirection(int d)
-    {
-        direction = d;
-        if(d == -1)
-        {
-            setImg("requinLR.png");
-        }
-        else
-        {
-            setImg("requinRL.png");
-        }
-    }
-    
-    public int getDirection()
-    {
-        return direction;
     }
 }

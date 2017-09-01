@@ -1,7 +1,6 @@
 
 import javax.swing.ImageIcon;
 
-
 public class Whale extends Motion{
     private int food_level;
     private int satiety;
@@ -16,7 +15,7 @@ public class Whale extends Motion{
         this.satiety = 25;
         this.life = 0;
         img = new ImageIcon("baleineLR.png");
-        this.direction = 1;
+        direction = 1;
     }
     
     public String getSpecie() {
@@ -31,8 +30,8 @@ public class Whale extends Motion{
             return food_level;
     }
 
-    public void setFood_level(int foodLevel) {
-            this.food_level = foodLevel;
+    public void setFood_level(int food_level) {
+            this.food_level = food_level;
     }
 
     public int getSatiety() {
